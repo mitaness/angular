@@ -1,0 +1,54 @@
+6:56 PM 4/26/2022
+
+what-is-the-save-option-for-npm-install
+As of npm 5.0.0, installed modules are added as a dependency by default, so the --save option is no longer needed.
+
+npm list -g --depth=0
+
+C:\Users\home\AppData\Local\Programs\Microsoft VS Code
+Local installation June 2020
+
+8:33 AM 6/23/2022
+tsc is some package with the same name as the typescript compiler on the command line. typescript is the real TypeScript package.
+npm install typescript -- correct
+npm install tsc -- bad
+
+Q. How to uninstall?
+A. npm uninstall -g typescript
+not npm uninstall -g tsc (we know why, see above)
+
+Q. Why is tsconfig.json ignored
+A. When input files are specified on the command line, tsconfig.json files are ignored. [SO]
+running this
+D:\tmp\v5>node_modules\.bin\tsc file.ts
+instead of
+D:\tmp\v5>node_modules\.bin\tsc
+
+node_modules\.bin\tsc -v
+Version 4.7.4
+
+[from D:\tmp\v3] readme.txt
+
+8:32 AM 28-May-22
+npm init -y
+default settings no question asked
+
+npm install -g @angular/cli
+
+npm install ng
+D:\tmp\v3>node_modules\.bin\ng
+
+npm install @angular/cli@12.0.2
+
+npx -p @angular/cli ng new npm-app
+
+tar -xf node.zip
+
+Edit Env variables for your account!
+
+Before
+D:\tmp\v4>node -v
+v12.13.1
+
+D:\tmp\v4>npm -v
+6.12.1

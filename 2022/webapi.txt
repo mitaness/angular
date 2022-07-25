@@ -1,0 +1,52 @@
+9:51 AM 09-Jul-22
+Shawn Wilderm...
+self hosting
+
+https://docs.microsoft.com/en-us/aspnet/web-api/overview/older-versions/self-host-a-web-api
+Microsoft.AspNet.WebApi.SelfHost
+This is a legacy package for hosting ASP.NET Web API within your own process (outside of IIS). Please use the Microsoft.AspNet.WebApi.OwinSelfHost package for new projects.
+
+- Create the Model and Controller
+Problem Access Denied
+netsh http add urlacl url=http://+:8080/ user=machine\username
+netsh http delete urlacl url=http://+:8080/
+
+
+netsh
+> http
+> show urlacl
+    Reserved URL            
+
+net user
+Note: the controller class has to be public
+
+problem:
+Trace requests
+https://docs.microsoft.com/en-us/aspnet/web-api/overview/advanced/http-message-handlers
+see side-menu for more,,,
+
+HTTP/1.1 200 OK
+Content-Length: 108
+Content-Type: application/json; charset=utf-8
+Server: Microsoft-HTTPAPI/2.0
+X-Custom-Header: This is my custom header.
+Date: Sat, 09 Jul 2022 09:29:30 GMT
+
+[{"Id":1,"Name":"Pen","Category":null,"Price":1.23},{"Id":2,"Name":"Notebook","Category":null,"Price":3.23}]
+
+HttpRequestMessage message
+var query = message.RequestUri.ParseQueryString()
+
+-------------------------------
+Dependency Injection
+Mark Seeman
+https://blog.ploeh.dk/2012/09/28/DependencyInjectionandLifetimeManagementwithASP.NETWebAPI/
+https://blog.ploeh.dk/2012/10/03/DependencyInjectioninASP.NETWebAPIwithCastleWindsor/
+
+DIContainers comparison
+https://philipm.at/2011/di_speed.html
+
+using structure map 
+10:53 AM 18-Jul-22
+[Test] receiving end c# http client: case insensitive serialization, but json/javascript client probably sees it with capital letters
+theme: property casing

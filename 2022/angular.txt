@@ -1,0 +1,72 @@
+"@angular/cli": "^14.1.0" compatible
+~ approximately equivalent
+Node.js version v12.13.1 detected.
+The Angular CLI requires a minimum Node.js version of either v14.15, or v16.10.
+6:57 AM 23-Jul-22
+
+version Must match version exactly
+>version Must be greater than version
+
+.ng-invalid:not(form)
+selector ignores the form
+
+.field-error - gives more control
+not showing errors until submit
+[class.field-error]=form.submitted && nameField.invalid
+[hidden]="expr"
+[disabled]="!signupForm.valid"
+[ngClass]="{ 'is-invalid': firstNameVar.touched && ... }"
+ng g s data
+g generate
+s service
+data.service.ts
+cd to the folder
+
+to work with http client we need to import HttpClientModule
+Access to XMLHttpRequest at 'http://localhost:15099/products' from origin 'http://localhost:4200' has been blocked by CORS policy
+No 'Access-Control-Allow-Origin' header is present on the requested resource.
+
+Solution (very cool)
+you add a Access-Control-Allow-Origin on your server!
+response.Headers.Add("Access-Control-Allow-Origin", "http://localhost:4200");
+
+Note no slash at the end
+because
+Access to XMLHttpRequest at 'http://localhost:15099/products' from origin 'http://localhost:4200' has been blocked by CORS policy: The 'Access-Control-Allow-Origin' header has a value 'http://localhost:4200/' that is not equal to the supplied origin.
+
+'http://localhost:4200/' != 'http://localhost:4200'
+
+{
+  X-Custom-Header: This is my custom header.
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json; charset=utf-8
+}
+
+{
+  X-Custom-Header: This is my custom header.
+  Access-Control-Allow-Origin: http://localhost:4200
+  Content-Type: application/json; charset=utf-8
+}
+
+beautiful article
+https://stackoverflow.com/questions/10636611/how-does-access-control-allow-origin-header-work
+
+For each resource/page that Site B wants to make accessible to Site A, Site B should serve its pages with the response header:
+
+Access-Control-Allow-Origin: http://siteA.com
+
+Modern browsers will not block cross-domain requests outright. If Site A requests a page from Site B, the browser will actually fetch the requested page on the network level and check if the response headers list Site A as a permitted requester domain. If Site B has not indicated that Site A is allowed to access this page, the browser will trigger the XMLHttpRequest's error event and deny the response data to the requesting JavaScript code.
+
+The code above working on Mark Zamoyta Angular Forms
+
+Starting Deborah Angular Reactive Forms
+11.2.17
+npm install -g @angular/cli@11.2.17
+npm list -g
+
+FormModel
+ controls: FormControl[]
+ valid:
+ value: email: '', ... 
+
+npm i bootstrap@5.2.0

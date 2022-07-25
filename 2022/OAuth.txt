@@ -1,0 +1,12 @@
+2:20 PM 19-Jun-22
+IdentityServer4
+demo.identityserver.io
+https://stackoverflow.com/questions/45807822/asp-net-core-2-0-jwt-validation-fails-with-authorization-failed-for-user-null
+
+The sequence of the add statements in the configure function is of importance. Make sure that
+
+app.UseAuthentication();
+comes before
+
+app.UseMvc();
+Might this have been the problem?
