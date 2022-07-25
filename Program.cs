@@ -57,7 +57,7 @@ namespace ConsoleApp2
 
         private static void Test()
         {
-            var config = new HttpSelfHostConfiguration("http://localhost:15099");
+            var config = new HttpSelfHostConfiguration("http://localhost:8080");
             //config.MessageHandlers.Add(new MessageHandler1());
             //config.MessageHandlers.Add(new MessageHandler2());
             config.MessageHandlers.Add(new MessageHandler3());
